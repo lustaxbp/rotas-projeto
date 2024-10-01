@@ -1,9 +1,12 @@
-import { Request,Response,Router } from "express";
+import { Request, Response, Router } from "express";
 
+// Cria um roteador
 const router = Router();
 
-router.get("/", (req: Request, res:Response) => {
-    res.json({mensagem: "Olá, Mundo!"});
+// Criando uma rota principal para a aplicação
+router.get("/", (req: Request, res: Response) => {
+    res.json({ mensagem: "Olá, mundo!" });
 });
 
-export {router};
+// exportando as rotas
+export { router };
